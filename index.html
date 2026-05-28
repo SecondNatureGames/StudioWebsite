@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hear No Evil — Second Nature Games</title>
+    <meta
+      name="description"
+      content="Hear No Evil is a rhythm-based game with turn-based movement, made by Matt Doak and Corwin Johnson."
+    />
+    <meta name="theme-color" content="#fbf7ef" />
+
+    <meta property="og:title" content="Hear No Evil — Second Nature Games" />
+    <meta
+      property="og:description"
+      content="A rhythm-based game with turn-based movement, made by Matt Doak and Corwin Johnson."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="imprint">second nature games</p>
+      <h1 class="game-title">Hear No Evil&nbsp;<span class="game-title-emoji" role="img" aria-label="hear-no-evil monkey">🙉</span></h1>
+      <p class="byline">A rhythm puzzle-platformer with turn-based movement.</p>
+
+      <div class="clip" aria-label="Gameplay clip placeholder">
+        <!--
+          Drop in the gameplay clip here when ready, e.g.:
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Hear No Evil gameplay"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          …or a self-hosted <video src="..."> tag. The container is already 16:9.
+        -->
+        <div class="clip-placeholder">
+          <span>gameplay clip — coming soon</span>
+        </div>
+      </div>
+
+      <p>
+        It's a rhythm-based game with turn-based movement. Every move lands on
+        the beat — whether that's solving a puzzle, getting through a
+        platforming section, or fighting something.
+      </p>
+
+      <p>
+        The setup: a troupe of monkeys summoned three idols through song and
+        dance, and now have to stop them to get peace back.
+      </p>
+
+      <div class="rule" aria-hidden="true">* * *</div>
+
+      <h2>Who we are</h2>
+
+      <ul class="people">
+        <li>
+          <strong>Matthew Doak</strong>
+          <span class="role"
+            >programming · game design ·
+            <a
+              href="https://bsky.app/profile/hearnoevilgame.bsky.social"
+              rel="noopener"
+              target="_blank"
+              >bluesky</a
+            ></span
+          >
+        </li>
+        <li>
+          <strong>Corwin Johnson</strong>
+          <span class="role"
+            >art · world building ·
+            <a
+              href="https://bsky.app/profile/compasscult.bsky.social"
+              rel="noopener"
+              target="_blank"
+              >bluesky</a
+            ></span
+          >
+        </li>
+      </ul>
+
+      <div class="rule" aria-hidden="true">* * *</div>
+
+      <h2>Get in touch</h2>
+
+      <!--
+        Netlify Forms: data-netlify="true" makes Netlify detect this on deploy.
+        Notification recipient is set in the Netlify dashboard →
+        Forms → contact → Form notifications.
+      -->
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/thanks.html"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hp">
+          <label
+            >Leave this field empty: <input name="bot-field" tabindex="-1"
+          /></label>
+        </p>
+
+        <p>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" />
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+          />
+        </p>
+
+        <p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit"><span>send →</span></button>
+        </p>
+      </form>
+
+      <footer class="colophon">
+        <!-- Update this line by hand as the project changes. -->
+        <p class="now">currently — early development</p>
+        <p>© <span id="year">2026</span> Second Nature Games</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
